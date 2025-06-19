@@ -51,29 +51,29 @@ Once PHP manager has been install. Install Rewrite Module.
 
 ![image](https://github.com/user-attachments/assets/35c0f8f2-0ae2-4bb6-b628-872eb3013421)
 <p>
-Now, we create a new directory in the C: drive. This done by creating a new folder by right clicking on the the C: drive and naming the folder PHP.
+Now, I create a new directory in the C: drive. This done by creating a new folder by right clicking on the the C: drive and naming the folder PHP.
 </p>
 
 ![image](https://github.com/user-attachments/assets/8a027675-f147-437e-b7f9-f08a7026cad1)
 <p>
-Now from the os-Ticket-Installation-Files folder unzip PHP 7.3.8 into the new C:\PHP folder we just created.
+Now from the os-Ticket-Installation-Files folder unzip PHP 7.3.8 into the new C:\PHP folder I just created.
 </p>
 
 ![image](https://github.com/user-attachments/assets/c19e0269-2a9a-4c34-b4d9-b7f40f29fbf5)
 </p>
-From the installation folder we will install Microsoft Visual C++ or VC_redist.x86 to the VM.
+From the installation folder I install Microsoft Visual C++ or VC_redist.x86 to the VM.
 <p>
 
 ![image](https://github.com/user-attachments/assets/4a48f639-6dde-48b8-a080-693663cce979)
 <p>
-Once everything has been install, install mysql 5.5 and set standard configuration and set username and password to one you will not forgot. 
+Once everything has been install, I install mysql 5.5 and set standard configuration and set my username and password.
 </p>
 
 ![image](https://github.com/user-attachments/assets/458bd944-1d0e-4ae8-9bcc-da407a4bdb50)
 ![image](https://github.com/user-attachments/assets/9a4f010b-ebea-441f-91bb-9f4b613eb75d)
 ![image](https://github.com/user-attachments/assets/7cb46e0a-1f48-4e0b-b505-7b8c263cfa5c)
 <p>
-We must register PHP from within IIS, in order to do so open IIS as admin. Once it open click PHP manager and click a register new PHP version. Now we will go into the new folder or directory we created and select php-cgi.exe. Once done, stop and start the server again.
+I register PHP from within IIS, in order to do so I open IIS as admin. Once it open I clicked PHP manager and clicked a register new PHP version. Now I go into the new folder or directory I created and select php-cgi.exe. Once done, stop and start the server again.
 </p>
 
 ![image](https://github.com/user-attachments/assets/8763c804-3f37-459a-9ba7-8505f04ebc12)
@@ -82,12 +82,12 @@ We must register PHP from within IIS, in order to do so open IIS as admin. Once 
 ![image](https://github.com/user-attachments/assets/b095e070-6561-4351-b55b-65aba15652fb)
 
 <p>
-Now to install osTicket we will unzip osTicket-v1.15.8.zip and copy it to the upload folder into C:\inetpub\wwwroot. Once this is done we rename the folder to osTicket. 
+Now to install osTicket I unzip osTicket-v1.15.8.zip and copy it to the upload folder into C:\inetpub\wwwroot. Once this is done I rename the folder to osTicket. 
 </p>
 
 ![image](https://github.com/user-attachments/assets/cfc99bae-b82a-4899-9894-c0a78a619241)
 <p>
-We will go back into IIS and stop and start the server again to update the changes.
+I will go back into IIS and stop and start the server again to update the changes.
 </p>
 
 ![image](https://github.com/user-attachments/assets/0a04f043-8998-446a-9d39-a238b0a24f3d)
@@ -95,7 +95,7 @@ We will go back into IIS and stop and start the server again to update the chang
 
 <p>
 Once everything is done within IIS. Go to sites then Default Web Sites finally osTicket. On the right column click the link Browse *:80.
-We need to enable certain extension that are disable.
+I need to enable certain extension that are disable.
 </p>
 
 <p>
@@ -107,18 +107,18 @@ We need to enable certain extension that are disable.
 ![image](https://github.com/user-attachments/assets/46b2b964-14f3-43a7-baab-b8f2054218ab)
 
 <p>
-Back inside the IIS we will go to sites to default to osTicket and double-click PHP Manager. Click enable or disable an extension. We will enable php_imap.dll, php_intl.dll, php_opcache.dll. Once this have been enable, refresh the the browser to see the changes take affect.
+Back inside the IIS I will go to sites to default to osTicket and double-click PHP Manager. Click enable or disable an extension. I will enable php_imap.dll, php_intl.dll, php_opcache.dll. Once this have been enable, refresh the the browser to see the changes take affect.
 </p>
 
 ![image](https://github.com/user-attachments/assets/cc6eb10f-a24c-49a9-9c00-6cb63e96e375)
 <p>
-Now rename the ost-sampleconfig.php to ost-config.php. We go to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php in the folder. Double right click and select rename folder, and change it to ost-config.php. Once this done we will remove all inheritance by double right clicking and going into properties. We set new permission to everyone to all.
+Now rename the ost-sampleconfig.php to ost-config.php. I go to C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php in the folder. Double right click and select rename folder, and change it to ost-config.php. Once this done I will remove all inheritance by double right clicking and going into properties. I set new permission to everyone to all.
 </p>
 
 ![image](https://github.com/user-attachments/assets/f2103f0e-5edf-4dcd-84d1-5026ddcc4f63)
 
 <p>
-Now we will set up the osTicket in the browser.
+Now I will set up the osTicket in the browser.
 </p>
 
 ![image](https://github.com/user-attachments/assets/5231682a-5662-4200-a54c-ca35d46a1828)
@@ -126,12 +126,12 @@ Now we will set up the osTicket in the browser.
 ![image](https://github.com/user-attachments/assets/1c32a427-8e51-4962-8946-6e24c6404654)
 ![image](https://github.com/user-attachments/assets/a4b763d9-b809-4079-93dc-a96c9f312786)
 <p>
-Finally, we will install HeidiSql. Once install create a new session and connect to the session using the username and password from the mysql we did in the begin. Create a new database name osTicket.
+Finally, I will install HeidiSql. Once install create a new session and connect to the session using the username and password from the mysql I did in the begin. Create a new database name osTicket.
 </p>
 
 ![image](https://github.com/user-attachments/assets/d9ba0934-838d-4802-9621-d10a3c7cdd26)
 <p>
-Once HeidiSql is set up. Write the information in the browser for the osTicket to collect information into database. Once completely click Install Now.
+Once HeidiSql is set up. Write the information in the browser for the osTicket to collect information into database. Once completely I clicked Install Now.
 </p>
 
 ![image](https://github.com/user-attachments/assets/bb5b7c71-8b49-40f3-a1d5-bd3d1808c839)
